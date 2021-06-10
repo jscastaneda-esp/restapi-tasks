@@ -1,0 +1,34 @@
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Hacer un sitio web en react",
+  "description": "Trabajo personal"
+}
+
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=2&page=1
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+GET http://localhost:3000/api/tasks/done?size=2&page=0
+
+###
+GET http://localhost:3000/api/tasks/60c15d3cfda4c9490c536a9d
+
+###
+PUT http://localhost:3000/api/tasks/60c15598fb0ab00e234c05d7
+Content-Type: application/json
+
+{
+  "done": true
+}
+
+###
+DELETE http://localhost:3000/api/tasks/60c153a8d17e29fe9db1856a
